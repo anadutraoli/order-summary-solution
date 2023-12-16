@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --azulBack: hsl(225, 100%, 94%);
+  --azulBotao: hsl(245, 75%, 52%);
+  --azul: hsl(225, 100%, 98%);
+  --fundoPlano: hsl(224, 23%, 55%);
+  --azulEscuro: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--azulBack);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.conteudo-titulo, .titulo-plano {
+  font-weight: 900;
+  color: var(--azulEscuro);
+}
+
+
+
+.main {
+  width: 375px;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: var(--fundoPlano);
+}
+
+.conteudo {
+  text-align: center;
+}
+
+.conteudo-imagem {
+  width: 100%;
+  display: block;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.conteudo-principal {
+  margin: 35px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plano {
+  background-color: var(--azul);
+  border-radius: 7px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.musica-plano {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.preco {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plano-change, .conteudo-botao, .conteudo-cancelar {
+  font-weight: 700;
+}
+
+.plano-change:visited {
+  color: var(--azulBotao);
+}
+
+.conteudo-botao {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--azulBotao);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.555);
+}
+
+.conteudo-cancelar {
+  text-decoration: none;
+  color: var(--fundoPlano);
+}
+
+
